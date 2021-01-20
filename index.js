@@ -161,7 +161,7 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(arr, string){
-    for(let i = 0);
+    for(let i = 0); //testing123
 }
 
 
