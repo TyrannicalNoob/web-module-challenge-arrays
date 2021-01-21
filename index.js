@@ -118,8 +118,8 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(originalFlavors.slice()){
-    
+function getFlavorByIndex(originalFlavors){
+    return originalFlavors
 }
 
 
@@ -165,9 +165,15 @@ Use the filterByWord function below to do the following:
 */
 
 function filterByWord(arr, string){
-     
+     const filteredArray = [];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].includes(string)){
+            filteredArray.push(arr[i]);
+        }
+    }
+    return newArray;
 }
-
+console.log(filterByWord(originalFlavors, 'Chocolate'));
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
